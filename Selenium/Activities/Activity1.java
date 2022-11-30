@@ -2,21 +2,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Activity1 {
-    public static void main(String args[]) throws Exception
-    {
-        WebDriver driver = new FirefoxDriver();
-        driver.get("https://alchemy.hguy.co/lms");
 
-        String title= driver.getTitle();
-        System.out.println(title);
-        if(title.equals("Alchemy LMS – An LMS Application"))
-        {
-            System.out.println("User get Expected page title");
-            driver.close();
-        }
-        else
-        {
-            System.out.println("Page title is not correct "+title);
-        }
+    public static void main(String[] args) {
+
+        // Create a new instance of the Firefox driver
+        WebDriver driver = new FirefoxDriver();
+
+        // Open the browser
+        driver.get("https://www.training-support.net");
+
+        // Close the browser
+        driver.close();
     }
+
 }
